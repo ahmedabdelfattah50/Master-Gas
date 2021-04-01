@@ -1,0 +1,246 @@
+/* ################### Start Global ################### */
+@import url('https://fonts.googleapis.com/css2?family=Cairo');
+
+* {
+    font-family: "Cairo";
+    direction: rtl;
+}
+
+/* ============== Start footer =============== */
+footer .footerSections .footerSection .footerLinks {
+    padding-right: 10px;
+}
+/* ============== End footer =============== */
+/* ################### End Global ################### */
+
+/* ################### Start index Page ################### */
+/* ============== Start Main =============== */
+main .whoWeLink {
+    width: 12%;
+}
+
+main .whoWeLink {
+    flex-flow: row-reverse;
+}
+
+main .mainTools {
+    left: 0;
+}
+
+main .mainTools .toolSection i {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+/* ============== Start Main =============== */
+
+/* ============== Start mainBranches =============== */
+.totalMainBranches {
+    flex-flow: row-reverse;
+}
+/* ============== End mainBranches =============== */
+
+
+/* ============== End sliderAboutCompany =============== */
+.sliderAboutCompany .backCurve { 
+    left: 0%;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+
+.sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData h2::after {
+    top: 120%;
+    right: 0;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-prev {
+    top: -23%;
+    bottom: 150%;
+    left: 85%;
+    z-index: 2;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-next {
+    top: -23%;
+    right: 0.5%;
+    bottom: 150%;
+    z-index: 2;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-dots { 
+    left: 0;
+}
+
+/* left: 86%; */
+
+/* ============== End sliderAboutCompany =============== */
+
+
+/* ============== Start ourServices =============== */
+
+/* .ourServices {
+    direction: ltr !important;
+} */
+
+
+/* .ourServices .ourServicesSlider {
+    right: 100%;
+    margin-left: 0;
+    float: left !important;
+} */
+
+.ourServices .ourServicesHeader {
+    padding: 0 10px 0 0;
+}
+
+.ourServices .ourServicesHeader:after {
+    right: 0;
+}
+/* ============== End ourServices =============== */
+
+/* ============== Start gasOffers =============== */
+
+.gasOffers .gasOffersImg {
+    left: 0;
+}
+
+.gasOffers .gasOffersArticle h2 {
+    padding-right: 10px;
+}
+
+.gasOffers .gasOffersArticle h2:after {
+    right: 0;
+}
+
+.gasOffers .gasOffersArticle p {
+    margin-right: 30px;
+}
+
+/* ============== End gasOffers =============== */
+
+
+
+/* ============== Start transferOffers =============== */
+.transferOffers .transferOffersHeader {
+    padding: 0 10px 0 0;
+}
+
+.transferOffers .transferOffersHeader:after {
+    right: 0;
+}
+/* ============== End transferOffers =============== */
+
+
+/* ============== Start ourMaps =============== */
+.ourMaps .ourMapsHeader {
+    padding: 0 10px 0 0;
+}
+
+.ourMaps .ourMapsHeader:after {
+    right: 0;
+}
+
+.ourMaps .ourMaps_Section .ourMaps_Section_Tabs {
+    padding-left: 0;
+}
+
+.ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills a.tab_with_arrow_icon::after {
+    right: 10px;
+    transform: scaleX(-1);
+}
+/* ============== Start ourMaps =============== */
+
+
+/* ============== Start latestNews =============== */
+.latestNews .latestNewsHeader {
+    padding: 0 10px 0 0;
+}
+
+.latestNews .latestNewsHeader:after {
+    right: 0;
+}
+/* ============== End latestNews =============== */
+
+/* ============== Start ourPartners =============== */
+.ourPartners .ourPartnersHeader {
+    padding: 0 10px 0 0;
+}
+
+.ourPartners .ourPartnersHeader:after {
+    right: 0;
+}
+/* ============== End ourPartners =============== */
+
+
+
+/* ################### Start index Page ################### */
+
+
+
+
+/* ################ Large devices (desktops, less than 1200px) ################ */
+@media (max-width: 1199.98px) {
+    /* ################### Start index Page ################### */
+    /* ============== Start Main =============== */
+    main .whoWeLink {
+        width: 13%;
+    }
+    /* ============== Start Main =============== */
+    /* ################### End index Page ################### */
+}
+
+
+/* ################ Medium devices (tablets, less than 992px) ################ */
+@media (max-width: 991.98px) {
+    /* ################### Start index Page ################### */
+    /* ============== Start Main =============== */
+    main .whoWeLink {
+        width: 18%;
+    }
+    /* ============== Start Main =============== */
+
+    /* ============== Start sliderAboutCompany =============== */
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData {
+        padding-left: 0;
+    }
+    /* ============== End sliderAboutCompany =============== */
+    /* ################### End index Page ################### */
+}
+
+/* ################ Small devices (landscape phones, less than 768px) ################ */
+@media (max-width: 767.98px) {
+    /* ################### Start index Page ################### */
+    /* ============== Start Main =============== */
+    main .whoWeLink {
+        width: 25%;
+    }
+    /* ============== Start Main =============== */
+
+
+    /* ============== Start sliderAboutCompany =============== */
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData h2 {
+        font-size: 23px;
+    }
+    /* ============== End sliderAboutCompany =============== */
+    /* ################### End index Page ################### */
+
+}
+
+/* ################ Extra small devices (portrait phones, less than 576px) ################ */
+@media (max-width: 575.98px) {
+    /* ============== Start Main =============== */
+    main h1 {
+        font-size: 28px;
+        padding: 0 30px;
+    }
+
+    main .whoWeLink {
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main .whoWeLink .whoWeSection {
+        margin-left: 10px;
+    }
+    /* ============== End Main =============== */
+}

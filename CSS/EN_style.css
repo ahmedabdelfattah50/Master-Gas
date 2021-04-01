@@ -1,0 +1,317 @@
+
+/* ################### Start Global ################### */
+/* ============== Start footer =============== */
+footer .footerSections .footerSection .footerLinks {
+    padding-left: 10px;
+}
+/* ============== End footer =============== */
+/* ################### End Global ################### */
+
+/* ################### Start index Page ################### */
+/* ============== Start Main =============== */
+main .whoWeLink {
+    width: 15%;
+}
+
+main .whoWeLink {
+    flex-flow: row-reverse;
+}
+
+main .whoWeLink img {
+    transform: scale(-1);
+}
+
+main .mainTools {
+    right: 0;
+}
+
+main .mainTools .toolSection i {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+/* ============== End Main =============== */
+
+/* ============== Start mainBranches =============== */
+.totalMainBranches {
+    direction: rtl;
+}
+/* ============== End mainBranches =============== */
+
+/* ============== Start sliderAboutCompany =============== */
+.sliderAboutCompany .backCurve { 
+    right: 0%;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+
+.sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData h2::after {
+    left: 0;
+    top: 100%;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-prev {
+    top: -23%;
+    left: 0.5%;
+    bottom: 150%;
+    z-index: 2;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-next {
+    top: -23%;
+    bottom: 150%;
+    left: 13%;
+    z-index: 2;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-dots { 
+    right: 0;
+}
+
+.sliderAboutCompany .paginator-center .buttonNextPrev {
+    flex-flow: row-reverse;
+}
+
+.sliderAboutCompany .aboutCompanySlider .sliderSection .sliderImage img {
+    transform: scaleX(-1);
+}
+/* ============== End sliderAboutCompany =============== */
+
+/* ============== Start ourServices =============== */
+.ourServices .ourServicesHeader {
+    padding: 0 0 0 10px;
+}
+
+.ourServices .ourServicesHeader:after {
+    left: 0;
+}
+
+.ourServices .paginator-center .buttonNextPrev {
+    flex-flow: row-reverse;
+}
+/* ============== End ourServices =============== */
+
+/* ============== Start gasOffers =============== */
+
+.gasOffers {
+    flex-flow: row-reverse;
+}
+
+.gasOffers .gasOffersImg {
+    right: 0;
+    transform: scaleX(-1);
+}
+
+.gasOffers .gasOffersArticle h2 {
+    padding-left: 10px;
+}
+
+.gasOffers .gasOffersArticle h2:after {
+    left: 0;
+}
+
+.gasOffers .gasOffersArticle p {
+    margin-left: 30px;
+}
+/* ============== End gasOffers =============== */
+
+
+/* ============== Start transferOffers =============== */
+.transferOffers .transferOffersHeader {
+    padding: 0 0 0 10px;
+}
+
+.transferOffers .transferOffersHeader:after {
+    left: 0;
+}
+
+.transferOffers .paginator-center .buttonNextPrev {
+    flex-flow: row-reverse;
+}
+/* ============== End transferOffers =============== */
+
+
+/* ============== Start ourMaps =============== */
+.ourMaps .ourMapsHeader {
+    padding: 0 0 0 10px;
+}
+
+.ourMaps .ourMapsHeader:after {
+    left: 0;
+}
+
+.ourMaps .ourMaps_Section .ourMaps_Section_Tabs {
+    padding-right: 0;
+}
+
+.ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills a.tab_with_arrow_icon::after {
+    left: 10px;
+    transform: scaleX(1);
+}
+/* ============== Start ourMaps =============== */
+
+/* =============== Start the section control of ourMaps =============== */
+.ourMaps_control .change_sections i {
+    transform: scaleX(-1);
+}
+/* =============== End the section control of ourMaps =============== */
+
+
+/* =============== Start latestNews =============== */
+.latestNews {
+    background-image: url('../images/latestNewsBack_ltr.png');
+}
+.latestNews .latestNewsHeader {
+    padding: 0 0 0 10px; 
+}
+
+.latestNews .latestNewsHeader:after {
+    left: 0;
+}   
+
+.latestNews .paginator-center .buttonNextPrev {
+    flex-flow: row-reverse;
+}
+/* ============== End latestNews =============== */
+
+/* ============== Start ourPartners =============== */
+.ourPartners .ourPartnersHeader {
+    padding: 0 0 0 10px; 
+}
+
+.ourPartners .ourPartnersHeader:after {
+    left: 0;
+}
+/* ============== End ourPartners =============== */
+
+/* ################### Start index Page ################### */
+
+
+/* ################ Large devices (desktops, less than 1200px) ################ */
+@media (max-width: 1199.98px) {
+    /* ################### Start index Page ################### */
+    /* ============== Start Main =============== */
+    main h1 {
+       font-size: 35px;
+    }
+
+    main .whoWeLink {
+        width: 19%;
+    }
+    /* ============== End Main =============== */
+
+
+    /* ============== Start mainBranches =============== */
+    .mainBranches .totalMainBranches .branchSection h2 {
+        font-size: 18px;
+    }
+
+    .mainBranches .totalMainBranches .branchSection p {
+        font-size: 16px;
+    }
+    /* ============== End mainBranches =============== */
+
+    /* ################### End index Page ################### */
+}
+
+
+/* ################ Medium devices (tablets, less than 992px) ################ */
+@media (max-width: 991.98px) {
+    /* .container {
+        background: red;
+    } */
+
+    /* ################### Start index Page ################### */
+    /* ============== Start Main =============== */
+    main .whoWeLink {
+        width: 25%;
+    }
+    /* ============== End Main =============== */
+
+    /* ============== Start sliderAboutCompany =============== */
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData {
+        padding-right: 0;
+        padding-bottom: 30px;
+    }
+
+    .sliderAboutCompany .backCurve {
+        top: 25%;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderImage {
+        margin-top: 0%;
+    }
+    /* ============== End sliderAboutCompany =============== */
+
+    /* ################### End index Page ################### */
+}
+
+/* ################ Small devices (landscape phones, less than 768px) ################ */
+@media (max-width: 767.98px) {
+    /* ################### Start index Page ################### */
+    /* ============== Start Main =============== */
+    main h1 {
+        font-size: 25px;
+    }
+ 
+    main .whoWeLink {
+        width: 35%;
+    }
+    /* ============== End Main =============== */
+
+    /* ============== Start sliderAboutCompany =============== */
+    .sliderAboutCompany .backCurve {
+        top: 50%;
+    }
+    /* ============== End sliderAboutCompany =============== */
+
+    /* ################### End index Page ################### */
+
+}
+
+/* ################ Extra small devices (portrait phones, less than 576px) ################ */
+@media (max-width: 575.98px) {
+    /* ################### Start index Page ################### */
+    /* ============== Start Main =============== */
+    main h1 {
+        font-size: 25px;
+        padding: 0 30px;
+    }
+
+    main .whoWeLink {
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main .whoWeLink .whoWeSection {
+        margin-right: 10px;
+    }
+    /* ============== End Main =============== */
+
+    /* ============== End sliderAboutCompany =============== */
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData {
+        padding-right: 0;
+        padding-bottom: 0px;
+    }
+    
+    .sliderAboutCompany .backCurve {
+        top: 55%;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .slick-dots {
+        top: -12% !important;
+        height: 35px;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderImage {
+        margin-top: 10%;
+    }
+    /* ============== End sliderAboutCompany =============== */
+
+    /* ============== Start .gasOffers =============== */
+    .gasOffers {
+        margin-top: 530px;
+    }
+    /* ============== End .gasOffers =============== */
+    /* ################### End index Page ################### */
+}

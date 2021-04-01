@@ -1,0 +1,1769 @@
+/* ################### Start Global ################### */
+body {
+    overflow-X: hidden;
+}
+/* ============== Start Navbar =============== */
+.navbar {
+    background: #fff;
+    padding: 15px 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar .navbar-brand {
+    margin: 0 15px;
+}
+
+.navbar .navbar-brand img {
+    width: 135px;
+    height: 55px;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar .navbar-nav {
+    padding: 0;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: #707070 !important;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active,
+.navbar .navbar-nav .nav-item .nav-link:hover,
+.navbar .navbar-nav:last-child .nav-item .nav-link:hover {
+    color: #ed3239 !important;
+}
+
+.navbar .langLink .nav-item .nav-link {
+    color: #16acaa !important;
+    margin: 0 15px;
+}
+/* ============== End Navbar =============== */
+
+/* ============== Start go_up icon =============== */
+.go_up {
+    position: fixed;
+    right: 40px;
+    top: 90%;
+    padding: 15px 10px;
+    background: #fff;
+    border: 2px solid #16acaa;
+    box-shadow: 0 0 10px #16acaa;
+    color: #16acaa;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    z-index: 55 !important;
+}
+/* ============== End go_up icon =============== */ 
+
+/* ============== Start footer =============== */
+footer {
+    padding: 40px 20px;
+    background: #e5e5e5;
+}
+
+footer .footerSections {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+footer .footerSections .footerSection {
+    padding: 0 10px;
+}
+
+footer .footerSections .footerSection h2 {
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+footer .footerSections .footerSection p {
+    color: #000;
+    font-size: 17px;
+    padding: 0;
+}
+
+footer .footerSections .footerSection .contactData {
+    padding: 0;
+    margin: 0;
+}
+
+footer .footerSections .footerSection .contactData a {
+    text-decoration: none;
+}
+
+footer .footerSections .footerSection .contactData i {
+    height: 30px;
+    width: 30px;
+    color: #fff;
+    background: #000;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+footer .footerSections .footerSection .contactData i:hover {
+    background: #ed3239;
+}
+
+footer .footerSections .footerSection .footerLinks a {
+    text-decoration: none;
+    color: #000;
+    margin: 2px 0;
+}
+
+footer .footerSections .footerSection .footerLinks a:hover {
+    font-weight: 600;
+}
+
+footer .footerCopyRights p {
+    color: #000;
+    font-size: 18px;
+    margin: 0;
+}
+/* ============== End footer =============== */
+/* ################### End Global ################### */
+
+
+/* ################### Start index Page ################### */
+/* ============== Start Main =============== */
+main {
+    height: 630px;
+    padding: 170px 0;
+    background-image: url('../images/mainBackGround.png');  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 90%;  
+    margin-top: 53px;
+}
+
+main h1 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+main .whoWeLink {
+    color: #fff;
+    text-decoration: none;
+}
+
+main .whoWeLink img {
+    height: 40px;
+    width: 40px;
+}
+
+main .whoWeLink .whoWeSection {
+    text-align: center;
+}
+
+main .whoWeLink .whoWeSection h2 {
+    font-size: 23px;
+    margin-bottom: 0px;
+}
+
+main .whoWeLink .whoWeSection p {
+    font-size: 13px;
+    margin: 0;
+}
+
+main a {
+    text-decoration: none;
+}
+
+main .scrollMouseIcon {
+    margin-top: 20px;
+    width: 23px;
+    height: 55px;
+    transition: 0.3s ease-in-out;
+    animation: scrollMouseIconMoves 2s infinite 0.2s;
+}
+
+@keyframes scrollMouseIconMoves {
+    0% {
+        transform: translate(0px,0px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px,40px);
+    }
+}
+
+/* ------ main tools */
+
+main .mainTools {
+    position: absolute;
+    margin-top: 0px;
+}
+
+main .mainTools .toolSection {
+    margin: 3px 0;
+    height: 36px !important;
+    transition: 0.3s ease-in-out;
+}
+
+main .mainTools .toolSection input,
+main .mainTools .toolSection p,
+main .mainTools .toolSection a {
+    display: none;
+}
+ 
+main .mainTools .toolSection i {
+    width: 30px;
+    height: 36px;
+    padding: 0px 20px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+main .mainTools .toolSection:hover {
+    width: 100%;
+}
+
+main .mainTools .toolSection:hover input,
+main .mainTools .toolSection:hover p,
+main .mainTools .toolSection:hover a {
+    display: flex;
+}
+
+main .mainTools .toolSection a:hover {
+    text-decoration: underline;
+    color: #ed3239;
+}
+
+main .mainTools .toolSection:hover .toolSectionData {
+    background: #fff;
+    padding: 6px;
+}
+
+main .mainTools .toolSection i {
+    font-size: 15px;
+    color: #16acaa;
+}
+
+main .mainTools .toolSection input {
+    color: #000;
+    border: none;
+    outline: 2px solid #16acaa;
+    font-size: 15px;
+    padding: 0.8px 2px;
+    width: 100%;
+}
+
+main .mainTools .toolSection a {
+    color: #16acaa;
+    text-decoration: none;
+}
+
+main .mainTools .toolSection p {
+    margin: 0;
+    color: #16acaa;
+}
+/* ============== End Main =============== */
+/* ============== Start mainBranches =============== */
+.mainBranches {
+    margin-top: -150px;
+}
+
+.mainBranches .totalMainBranches .branchSection {
+    text-align: center;
+}
+
+.mainBranches .totalMainBranches {
+    background: #fff;
+    padding: 40px 0px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+
+.mainBranches .totalMainBranches .branchSection .branchImg {
+    height: 65px;
+    width: 65px;
+    margin-bottom: 10px;
+}
+
+.mainBranches .totalMainBranches .branchSection img {
+   height: 100%;
+   width: 100%;
+}
+
+.mainBranches .totalMainBranches .branchSection h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #444444;
+}
+
+.mainBranches .totalMainBranches .branchSection p {
+    font-size: 16px;
+    margin: 0;
+    padding: 0 25px;
+    color:#707070;
+}
+/* ============== End mainBranches =============== */
+/* ============== Start sliderAboutCompany =============== */
+.sliderAboutCompany {
+    padding: 170px 0;
+    position: relative;
+}
+
+.sliderAboutCompany .backCurve {
+    height: 360px;
+    width: 400px;
+    position: absolute;
+    background: #16acaa;
+}
+
+.sliderAboutCompany .aboutCompanySlider .sliderSection {
+    outline: none;
+    cursor: pointer;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-prev {
+    display: flex;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-prev::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f104";
+    color: #ed3239 !important;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-next {
+    display: flex;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-next::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f105";
+    color: #ed3239 !important;
+}
+
+.sliderAboutCompany .paginator-center {
+    position: absolute;
+    display: flex;
+    top: 8%;
+    padding: 0 5px;
+    height: 0px;
+    z-index: 2;
+}
+
+.sliderAboutCompany .paginator-center .buttonNextPrev {
+    /* background: #fff; */
+    padding: 0 20px;
+    border-radius: 20px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.16); */
+}
+
+.sliderAboutCompany .paginator-center .buttonNextPrev i {
+    font-size: 25px;
+    padding: 5px 20px;
+    color: #ed3239;
+    opacity: 0.7;
+}
+
+.sliderAboutCompany .paginator-center .buttonNextPrev i:hover {
+    opacity: 1;
+}
+
+.sliderAboutCompany .paginator-center .buttonNextPrev {
+    position: absolute;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-dots {
+    background: #fff;
+    top: -45%;
+    bottom: 150%;
+    height: 40px;
+    width: auto;
+    padding: 0 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-dots li {
+    display: flex;
+    justify-content: center;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-dots li button {
+    border: 1px solid #ed3239;
+    height: 0px;
+    width: 0px;
+    padding: 3px;
+    margin-top: 15px;
+    border-radius: 50%;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-dots li {
+    margin: 0;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-dots li button::before {
+    display: none;
+}
+
+.sliderAboutCompany .aboutCompanySlider .slick-dots li.slick-active button {
+    border: 1px solid #ed3239;
+    background: #ed3239;
+    height: 0px;
+    width: 0px;
+    padding: 3px;
+    margin-top: 15px;
+    border-radius: 50%;
+}
+
+.sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData h2 {
+    color: #444;
+    font-size: 32px;
+    font-weight: 600;
+    position: relative;
+    margin: 0 14px 12px;    
+}
+
+.sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData h2::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 39px;
+    background: #ed3239;
+}
+
+.sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData p {
+    color: #707070;
+    font-size: 20px;
+    margin: 0 14px 16px;  
+}
+
+.sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData a {
+    text-decoration: none;
+    background: #16acaa;
+    border-radius: 20px;
+    padding: 4px 40px;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+}
+
+.sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData a:hover {
+    padding: 4px 70px;
+    box-shadow: 0 0 10px #16acaa;
+}
+
+
+.sliderAboutCompany .aboutCompanySlider .sliderSection .sliderImage {
+    padding: 0;
+    width: 440px; 
+    height: 270px !important;
+}
+
+.sliderAboutCompany .aboutCompanySlider .sliderSection .sliderImage img {
+    height: 100%;
+    width: 100%;
+}
+/* ============== End sliderAboutCompany =============== */
+/* ============== Start ourServices =============== */
+.ourServices {
+    width: 100%;
+    position: absolute;
+    /* background-image: url('../images/ourServicesBackGround.png'); */
+    /* background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center top; */
+    padding: 20px 0;
+    background: #E5E5E5;
+}
+
+.ourServices .ourServicesHeader {
+    color: #16acaa;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    margin: -100px 30px 0px;
+}
+
+.ourServices .ourServicesHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}   
+
+.ourServices .ourServicesSlider {
+    padding: 40px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.ourServices .ourServicesSlider .slick-list {
+    width: 100%;
+}
+
+.ourServices .slick-slider .slick-track {
+    padding: 20px 0;
+}
+
+.ourServices .ourServicesSlider .ourServicesSection {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    background: #fff;
+    padding: 20px;
+    margin: 0 12px;
+    cursor: pointer;
+    outline: none;
+}
+
+.ourServices .ourServicesSlider .ourServicesSection img {
+    width: 145px;
+    height: 215px;
+    margin-bottom: 10px;
+}
+
+.ourServices .ourServicesSlider .ourServicesSection h2 {
+    color: #444;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.ourServices .ourServicesSlider .ourServicesSection p {
+    color: #707070;
+    font-size: 16px;
+}
+
+.ourServices .ourServicesSlider .ourServicesSection a {
+    background: #ed3239;
+    padding: 3px 30px;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.ourServices .ourServicesSlider .ourServicesSection a:hover {
+    box-shadow: 0 0 10px #ed3239;
+    padding: 3px 50px;
+}
+
+.ourServices .paginator-center {
+    display: flex;
+    justify-content: center;
+}
+
+.ourServices .paginator-center .buttonNextPrev {
+    width: 47%;
+    top: 97%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.ourServices .paginator-center .buttonNextPrev a {
+    text-decoration: none;
+}
+
+.ourServices .paginator-center .buttonNextPrev i {
+    font-size: 25px;
+    color: #ed3239;
+    opacity: 0.7;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+
+.ourServices .paginator-center .buttonNextPrev i:hover {
+    opacity: 1;
+}
+
+.ourServices .paginator-center .buttonNextPrev {
+    position: absolute;
+    top: 96.5%;
+}
+
+.ourServices .ourServicesSlider .slick-dots {
+    background: #fff;
+    margin-top: -50px;
+    top: 112%;
+    bottom: 150%;
+    height: 40px; 
+    width: auto;
+    padding: 0 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+}
+
+.ourServices .ourServicesSlider .slick-dots li {
+    display: flex;
+    justify-content: center;
+}
+
+.ourServices .ourServicesSlider .slick-dots li button {
+    border: 1px solid #ed3239;
+    height: 0px;
+    width: 0px;
+    padding: 3px;
+    margin-top: 15px;
+    border-radius: 50%;
+}
+
+.ourServices .ourServicesSlider .slick-dots li {
+    margin: 0;
+}
+
+.ourServices .ourServicesSlider .slick-dots li button::before {
+    display: none;
+}
+
+.ourServices .ourServicesSlider .slick-dots li.slick-active button {
+    border: 1px solid #ed3239;
+    background: #ed3239;
+    height: 0px;
+    width: 0px;
+    padding: 3px;
+    margin-top: 15px;
+    border-radius: 50%;
+}
+/* ============== End ourServices =============== */
+/* ============== Start gasOffers =============== */
+.gasOffers {
+    padding: 100px 0;
+    margin-top: 489px;
+}
+
+.gasOffers .totalGasOffers {
+    flex-flow: row-reverse;
+    justify-content: space-between;
+}
+
+.gasOffers .totalGasOffers img {
+    height: 330px;
+    transition: 0.3s ease-in-out;
+}
+
+.gasOffers .totalGasOffers img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.gasOffers .totalGasOffers .gasOffersArticle {
+    padding: 0;
+}
+
+.gasOffers .totalGasOffers .gasOffersArticle h2 {
+    color: #16acaa;
+    margin: 0;
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 30px 20px;
+}
+
+.gasOffers .totalGasOffers .gasOffersArticle h2:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}   
+
+.gasOffers .totalGasOffers .gasOffersArticle p {
+    color: #707070;
+    font-size: 20px;
+    line-height: 35px;
+}
+/* ============== End gasOffers =============== */
+/* ============== Start transferOffers =============== */
+.transferOffers {
+    position: relative;
+}
+
+.transferOffersSection {
+    background: #ed3239;
+    width: 100%;
+}
+
+.transferOffers .transferOffersHeader {
+    color: #16acaa;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    margin: 0 30px 20px;
+}
+
+.transferOffers .transferOffersHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}   
+
+.transferOffers .transferOffersSlider {
+    padding: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.transferOffers .transferOffersSlider .slick-list {
+    width: 100%;
+}
+
+.transferOffers .slick-slider .slick-track {
+    padding: 20px 0;
+}
+
+.transferOffers .transferOffersSlider .transferOffersSection {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.438);
+    background: #fff;
+    margin: 0 12px;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+}
+
+.transferOffers .transferOffersSlider .transferOffersSection .firstImgBack {
+    width: 100%;
+    height: 270px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+}
+
+.transferOffers .transferOffersSlider .transferOffersSection .transferOffersSectionContent {
+    background: transparent;
+    background-image: url('../images/transferOffersContent_back_2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    height: 280px;
+    margin-top: -100px;
+    padding-top: 100px;
+}
+
+.transferOffers .transferOffersSlider .transferOffersSection p {
+    color: #ffffff;
+    font-size: 17px;
+    padding: 0 18px;
+}
+
+.transferOffers .transferOffersSlider .transferOffersSection a {
+    background: #fff;
+    padding: 3px 30px;
+    color: #ed3239;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.transferOffers .transferOffersSlider .transferOffersSection a:hover {
+    box-shadow: 0 0 10px #fff;
+    padding: 3px 50px;
+}
+
+.transferOffers .paginator-center {
+    display: flex;
+    justify-content: center;
+}
+
+.transferOffers .paginator-center .buttonNextPrev {
+    width: 47%;
+    top: 103%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.transferOffers .paginator-center .buttonNextPrev a {
+    text-decoration: none;
+}
+
+.transferOffers .paginator-center .buttonNextPrev i {
+    font-size: 25px;
+    color: #ed3239;
+    opacity: 0.7;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+
+.transferOffers .paginator-center .buttonNextPrev i:hover {
+    opacity: 1;
+}
+
+.transferOffers .transferOffersSlider .slick-dots {
+    background: #fff;
+    margin-top: -50px;
+    top: 112%;
+    bottom: 150%;
+    height: 40px; 
+    width: auto;
+    padding: 0 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+}
+
+.transferOffers .transferOffersSlider .slick-dots li {
+    display: flex;
+    justify-content: center;
+}
+
+.transferOffers .transferOffersSlider .slick-dots li button {
+    border: 1px solid #ed3239;
+    height: 0px;
+    width: 0px;
+    padding: 3px;
+    margin-top: 15px;
+    border-radius: 50%;
+}
+
+.transferOffers .transferOffersSlider .slick-dots li {
+    margin: 0;
+}
+
+.transferOffers .transferOffersSlider .slick-dots li button::before {
+    display: none;
+}
+
+.transferOffers .transferOffersSlider .slick-dots li.slick-active button {
+    border: 1px solid #ed3239;
+    background: #ed3239;
+    height: 0px;
+    width: 0px;
+    padding: 3px;
+    margin-top: 15px;
+    border-radius: 50%;
+}
+/* ============== End transferOffers =============== */
+/* ============== Start ourMaps =============== */
+.ourMaps {
+    padding: 70px 0 20px;
+}
+
+.ourMaps #ourMaps_Section_2 {
+    display: none;
+}
+
+.ourMaps .ourMapsHeader {
+    color: #16acaa;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    margin: 0 30px 20px;
+}
+
+.ourMaps .ourMapsHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}  
+
+.ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills {
+    flex-flow: column;
+}
+
+.ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills a {
+    color: #707070;
+    background: #d3d3d3;
+    font-size: 18px;
+    margin: 5px 0;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+
+.ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills a.main_tab {
+    color: #fff;
+    background: #16acaa;
+}
+
+.ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills a.tab_with_arrow_icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills a.tab_with_arrow_icon::after { 
+    position: absolute;
+    content: '';
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f104";
+    font-size: 18px;
+    top: 12px;
+    color: #707070;
+}
+
+.ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills a:first-child {
+    margin-top: 0;
+}
+
+.ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills a:last-child {
+    margin-bottom: 0;
+}
+
+.ourMaps .ourMaps_Section .ourMaps_Section_Content {
+    background: #d3d3d3;
+    padding: 0;
+    position: relative;
+    border-radius: 20px;
+    display: flex; 
+}
+
+.ourMaps .ourMaps_Section .ourMaps_Section_Content iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 20px
+}
+/* ============== End ourMaps =============== */
+/* =============== Start the section control of ourMaps =============== */
+.ourMaps_control .change_sections {
+    width: auto;
+}
+
+.ourMaps_control .change_sections .change_tab_item {
+    color: #707070;
+    font-size: 18px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.ourMaps_control .change_sections .change_tab_item.active {
+    font-weight: 700;
+}
+
+.ourMaps_control .change_sections i {
+    color: #ed3239;
+    font-size: 18px;
+    padding: 5px 20px;
+}
+/* =============== End the section control of ourMaps =============== */
+/* ============== Start latestNews =============== */
+.latestNews {
+    position: relative;
+    margin-top: 50px;   
+    background-image: url('../images/latestNewsBack.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    padding-bottom: 40px;
+}
+
+.latestNewsSection {
+    background: #ed3239;
+    width: 100%;
+}
+
+.latestNews .latestNewsHeader {
+    color: #16acaa;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    margin: 0 30px 20px;
+}
+
+.latestNews .latestNewsHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}   
+
+.latestNews .latestNewsSlider {
+    padding: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.latestNews .latestNewsSlider .slick-list {
+    width: 100%;
+}
+
+.latestNews .slick-slider .slick-track {
+    padding: 20px 0;
+}
+
+.latestNews .latestNewsSlider .latestNewsSection {
+    box-shadow: 0 0 15px rgba(23, 23, 23, 0.16);
+    background: #fff;
+    margin: 0 15px;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    overflow: hidden;
+}
+
+.latestNews .latestNewsSlider .latestNewsSection .firstImgBack {
+    width: 100%;
+    height: 280px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-size: 96% 96%;
+}
+
+.latestNews .latestNewsSlider .latestNewsSection .latestNewsSectionContent {
+    background: transparent;
+    background-image: url('../images/latestNewsSliderCurve.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    height: 200px;
+    margin-top: -80px;
+    padding: 70px 20px 0;
+}
+
+.latestNews .latestNewsSlider .latestNewsSection p {
+    color: #ffffff;
+    font-size: 18px;
+    padding: 0 7px;
+}
+
+.latestNews .latestNewsSlider .latestNewsSection a {
+    background: #fff;
+    padding: 3px 30px;
+    color: #ed3239;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.latestNews .latestNewsSlider .latestNewsSection a:hover {
+    box-shadow: 0 0 10px #fff;
+    padding: 3px 50px;
+}
+
+.latestNews .paginator-center {
+    display: flex;
+    justify-content: center;
+}
+
+.latestNews .paginator-center .buttonNextPrev {
+    width: 95%;
+    top: 47%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.latestNews .paginator-center .buttonNextPrev a {
+    text-decoration: none;
+}
+
+.latestNews .paginator-center .buttonNextPrev i {
+    font-size: 25px;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #16acaa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+/* ============== End latestNews =============== */
+/* ============== Start ourPartners =============== */
+.ourPartners {
+    padding: 70px 0;
+}
+
+.ourPartners .ourPartnersHeader {
+    color: #16acaa;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    margin: 0 30px 30px;
+}
+
+.ourPartners .ourPartnersHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}   
+
+.ourPartners .ourPartnersLinks a {
+    width: 110px;
+    height: 110px;
+    transition: 0.3s ease-in-out;
+}
+
+.ourPartners .ourPartnersLinks a:hover {
+    transform: scale(1.5,1.5);
+}
+
+.ourPartners .ourPartnersLinks a img {
+    width: 100%;
+    height: 100%;
+}
+/* ============== End ourPartners =============== */
+/* ################### End index Page ################### */
+
+/* ################ Large devices (desktops, less than 1200px) ################ */
+@media (max-width: 1199.98px) {
+    /* ################### Start Global ################### */
+    /* ============== Start Navbar =============== */
+    .navbar .navbar-nav .nav-item .nav-link {
+        font-size: 17px;
+    }
+    /* ============== End Navbar =============== */
+    /* ============== Start go_up icon =============== */
+    .go_up {
+        top: 93%; 
+    }
+    /* ============== End go_up icon =============== */ 
+    /* ============== Start footer =============== */
+    footer {
+        padding: 20px 10px;
+    }
+
+    footer .footerSections .footerSection h2 {
+        font-size: 17px;
+    }
+
+    footer .footerSections .footerSection p {
+        font-size: 16px;
+        padding: 0 10px;
+        margin: 0;
+    }
+
+    footer .footerSections .footerSection .contactData {
+        margin-top: 10px;
+    }
+
+    /* footer .footerSections {
+        flex-wrap: wrap;
+    } */
+
+    footer .footerSections .footerSection {
+        /* flex: 30%; */
+        margin: 20px 0;
+    }
+
+    footer .footerCopyRights p {
+        font-size: 17px;
+    }
+
+    footer .footerSections {
+        grid-template-columns: repeat(3,1fr);
+    }
+    /* ============== End footer =============== */
+    /* ################### End Global ################### */
+
+    /* ################### Start index Page ################### */
+    /* ============== Start sliderAboutCompany =============== */
+    .sliderAboutCompany {
+        padding: 170px 0 140px;
+    }
+
+    .sliderAboutCompany .backCurve {
+        width: 330px;
+    }
+    /* ============== End sliderAboutCompany =============== */
+    /* ============== Start ourServices =============== */
+    .ourServices .ourServicesSlider {
+        padding: 30px 0 0;
+    }
+
+    .ourServices .ourServicesSlider .ourServicesSection {
+        margin: 0 10px;
+    }
+    /* ============== End ourServices =============== */
+    /* ============== Start gasOffers =============== */
+    .gasOffers {
+        padding: 80px 0;
+    }
+
+    .gasOffers .totalGasOffers img {
+        height: 280px;
+    }
+    /* ============== End gasOffers =============== */
+    /* ============== Start transferOffers =============== */
+    .transferOffers .transferOffersSlider .transferOffersSection {
+        margin: 0 10px;
+    }
+
+    .transferOffers .transferOffersSlider .transferOffersSection .transferOffersSectionContent {
+        padding-top: 80px;
+    }
+    /* ============== End transferOffers =============== */
+
+    /* ============== Start latestNews =============== */
+    .latestNews .latestNewsSlider .latestNewsSection {
+        margin: 0 10px;
+    }
+
+    .latestNews .latestNewsSlider .latestNewsSection .latestNewsSectionContent {
+        padding: 60px 20px 0;
+    }
+
+    .latestNews .paginator-center .buttonNextPrev {
+        width: 97%;
+        top: 50%;
+    }
+    /* ============== End latestNews =============== */
+
+    /* ============== Start ourPartners =============== */
+    .ourPartners {
+        padding: 55px 0;
+    }
+    /* ============== End ourPartners =============== */
+    /* ################### End index Page ################### */
+}
+
+
+/* ################ Medium devices (tablets, less than 992px) ################ */
+@media (max-width: 991.98px) {
+    /* ################### Start Global ################### */
+    /* ============== Start Navbar =============== */
+    .navbar {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    .navbar .navbar-toggler {
+        background: #fff;   
+        border: 2px solid #ed3239;
+        outline: none;
+        padding: 4px 10px;
+        margin: 10px 20px;
+    }
+
+    .navbar .navbarMenu {
+        position: relative;
+        display: flex;
+    }
+
+    .navbar .navbarMenu::after {
+        position: absolute;
+        content: "\f0c9";
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 600; 
+        color: #ed3239 !important;
+    }
+
+    .navbar .navbar-collapse {
+        padding: 5px 20px 10px 20px;
+    }
+
+    .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+        padding: 2px 0;
+    }
+    /* ============== End Navbar =============== */
+
+    /* ============== Start footer =============== */
+    /* footer .footerSections .footerSection {
+        flex: 40%;
+    } */
+
+    footer .footerSections {
+        grid-template-columns: repeat(2,1fr);
+    }
+    /* ============== End footer =============== */
+    /* ################### End Global ################### */
+
+    /* ################### Start index Page ################### */
+    /* ============== Start Main =============== */
+    main h1 {
+        font-size: 30px;
+        padding: 0 60px;
+        text-align: center;
+    }
+    /* ============== End Main =============== */
+    /* ============== Start mainBranches =============== */
+    .mainBranches .totalMainBranches .branchSection {
+        padding: 10px 15px;
+    }
+
+    .mainBranches .totalMainBranches {
+        padding: 10px 0;
+        flex-wrap: wrap;
+    }
+
+    .mainBranches .totalMainBranches .branchSection .branchImg {
+        height: 60px;
+        width: 60px;
+    }
+
+    .mainBranches .totalMainBranches .branchSection h2 {
+        font-size: 18px;
+    }
+
+    .mainBranches .totalMainBranches .branchSection p {
+        font-size: 16px;
+        padding: 0;
+    }
+    /* ============== End mainBranches =============== */
+    /* ============== Start sliderAboutCompany =============== */
+    .sliderAboutCompany {
+        padding: 130px 0;
+    }
+
+    .sliderAboutCompany .backCurve {
+        height: 270px;
+        width: 270px;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection {
+        padding: 10px 0;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .slick-dots {
+        top: -35%;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData h2 {
+        font-size: 27px;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData p {
+        font-size: 18px;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData a {
+        padding: 4px 40px;
+        font-size: 16px;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData a:hover {
+        padding: 4px 60px;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderImage {
+        height: 230px !important;
+    }
+    /* ============== End sliderAboutCompany =============== */
+    /* ============== Start gasOffers =============== */
+    .gasOffers {
+        padding: 60px 0;
+    }
+
+    .gasOffers .totalGasOffers {
+        flex-flow: column;
+    }
+
+    .gasOffers .totalGasOffers .gasOffersImg {
+        padding: 20px 0;
+    }
+    /* ============== End gasOffers =============== */
+    /* ============== Start ourMaps =============== */
+    .ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills a {
+        font-size: 16px;
+    }
+
+    .ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills a.tab_with_arrow_icon::after { 
+        font-size: 16px;
+    }
+    /* ============== End ourMaps =============== */
+    /* ============== Start ourMaps =============== */
+    .ourMaps .ourMaps_Section {
+        flex-flow: column-reverse;
+        align-items: center;
+    }
+
+    .ourMaps .ourMaps_Section .ourMaps_Section_Content {
+        height: 400px;
+        margin: 10px;
+    }
+
+    .ourMaps .ourMaps_Section .ourMaps_Section_Tabs {
+        padding: 0;
+    }
+
+    .ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills {
+        flex-flow: row;
+        flex-wrap: wrap !important;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+
+    .ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills a {
+        font-size: 16px;
+        margin: 5px !important;
+    }
+
+    .ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills a.tab_with_arrow_icon::after { 
+        font-size: 16px;
+    }
+    /* ============== End ourMaps =============== */
+    /* ============== Start latestNews =============== */
+    .latestNews .paginator-center .buttonNextPrev {
+        width: 95%;
+        top: 50%;
+    }
+
+    .latestNews .paginator-center .buttonNextPrev i {
+        font-size: 20px;
+        height: 35px;
+        width: 35px;
+    }
+    /* ============== End latestNews =============== */
+    /* ============== Start ourPartners =============== */
+    .ourPartners {
+        padding: 50px 0;
+    }
+
+    .ourPartners .ourPartnersLinks a {
+        width: 90px;
+        height: 90px;
+    }
+
+    .ourPartners .ourPartnersLinks a:hover {
+        transform: scale(1.3,1.3);
+    }
+    /* ============== End ourPartners =============== */
+    /* ################### End index Page ################### */
+
+}
+
+/* ################ Small devices (landscape phones, less than 768px) ################ */
+@media (max-width: 767.98px) {
+
+    /* ################### Start Global ################### */
+    /* ============== Start footer =============== */
+    footer .footerSections {
+        grid-template-columns: repeat(1,1fr);
+    }
+    /* ============== End footer =============== */
+    /* ################### End Global ################### */
+
+    /* ################### Start index Page ################### */
+    /* ============== Start mainBranches =============== */
+    .mainBranches .totalMainBranches .branchSection {
+        padding: 10px 15px;
+    }
+
+    .mainBranches .totalMainBranches {
+        padding: 10px 0;
+        flex-wrap: wrap;
+    }
+
+    .mainBranches .totalMainBranches .branchSection .branchImg {
+        height: 60px;
+        width: 60px;
+    }
+
+    .mainBranches .totalMainBranches .branchSection h2 {
+        font-size: 18px;
+    }
+
+    .mainBranches .totalMainBranches .branchSection p {
+        font-size: 16px;
+        padding: 0;
+    }
+    /* ============== End mainBranches =============== */
+    /* ============== Start sliderAboutCompany =============== */
+    .sliderAboutCompany {
+        padding: 120px 0;
+    }
+
+    .sliderAboutCompany .backCurve {
+        width: 290px;
+        top: 45%;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection {
+        flex-flow: column;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .slick-dots {
+        top: -14% !important;
+    }
+
+    .sliderAboutCompany .paginator-center .buttonNextPrev i {
+        font-size: 20px;
+        padding: 8px 20px;
+    } 
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData p {
+        font-size: 18px;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderImage {
+        height: 230px !important;
+        width: 350px;
+        margin-top: 10%;
+    }
+    /* ============== End sliderAboutCompany =============== */
+    /* ============== Start gasOffers =============== */
+    .gasOffers {
+        padding: 40px 0;
+    }
+
+    .gasOffers .totalGasOffers .gasOffersImg img {
+        width: 100%;
+        height: 90%;
+    }
+
+    .gasOffers .totalGasOffers .gasOffersImg img:hover {
+        transform: none;
+    }
+    /* ============== End gasOffers =============== */
+    /* ============== Start ourMaps =============== */
+    .ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills {
+        margin: 0;
+    }
+    /* ============== End ourMaps =============== */
+    /* ============== Start latestNews =============== */
+    .latestNews .latestNewsSlider .latestNewsSection {
+        margin: 0 50px;
+    }
+
+    .latestNews .paginator-center .buttonNextPrev {
+        width: 90%;
+        top: 50%;
+    }
+
+    .latestNews .paginator-center .buttonNextPrev i {
+        font-size: 18px;
+        height: 30px;
+        width: 30px;
+    }
+    /* ============== End latestNews =============== */
+    /* ============== Start ourPartners =============== */
+    .ourPartners {
+        padding: 50px 0;
+    }
+
+    .ourPartners .ourPartnersLinks a {
+        width: 90px;
+        height: 90px;
+    }
+
+    .ourPartners .ourPartnersLinks a:hover {
+        transform: scale(1.3,1.3);
+    }
+    /* ============== End ourPartners =============== */
+    /* ################### End index Page ################### */
+}
+
+/* ################ Extra small devices (portrait phones, less than 576px) ################ */
+@media (max-width: 575.98px) {
+    /* ################### Start Global ################### */
+    /* ============== Start Navbar =============== */
+    .navbar {
+        padding: 5px;
+    }
+
+    .navbar .navbar-brand {
+        padding: 0;
+    }
+
+    .navbar .navbar-brand img {
+        width: 125px;
+        height: 50px;
+    }
+
+    .navbar .navbar-toggler {
+        margin: 5px 10px;
+    }
+
+    .navbar .navbar-collapse {
+        padding: 5px 5px 10px 5px;
+    }
+
+    .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+        padding: 0;
+    } 
+    /* ============== End Navbar =============== */
+
+    /* ============== Start footer =============== */
+    /* footer .footerSections .footerSection {
+        flex: 100%;
+    } */
+    /* ============== End footer =============== */
+
+    /* ################### End Global ################### */
+
+    /* ################### Start index Page ################### */
+    /* ============== Start Main =============== */
+    main .mainTools {
+        display: none !important;
+    }
+
+    main .whoWeLink img {
+        width: 35px;
+        height: 35px;
+    }
+
+    main .scrollMouseIcon {
+        width: 20px;
+        height: 50px;
+    }
+    /* ============== End Main =============== */
+    /* ============== Start mainBranches =============== */
+    .mainBranches .totalMainBranches {
+        padding: 15px 0;
+    }
+
+    .mainBranches .totalMainBranches .branchSection .branchImg {
+        height: 60px;
+        width: 60px;
+    }
+    /* ============== End mainBranches =============== */
+    /* ============== Start sliderAboutCompany =============== */
+    .sliderAboutCompany {
+        padding: 130px 0;
+    }
+
+    .sliderAboutCompany .backCurve {
+        width: 290px;
+        height: 240px;
+        top: 52%;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection {
+        flex-flow: column;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .slick-dots {
+        top: -13.5% !important;
+        height: 35px;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .slick-dots li {
+        width: 15px;
+        height: 15px;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .slick-dots li button {
+        margin-top: 15px;
+    }
+
+    .sliderAboutCompany .paginator-center .buttonNextPrev {
+        margin-top: -15px;
+    }
+
+    .sliderAboutCompany .paginator-center .buttonNextPrev i {
+        font-size: 18px;
+        padding: 8px 10px;
+    } 
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData h2 {
+        font-size: 20px;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData p {
+        font-size: 18px;
+    }
+
+    .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderImage {
+        height: 240px !important;
+        width: 300px;
+        margin-top: 15%;
+    }
+    /* ============== End sliderAboutCompany =============== */
+    /* ============== Start ourServices =============== */
+    .ourServices .paginator-center .buttonNextPrev {
+        width: 75%;
+    }
+
+    .ourServices .paginator-center .buttonNextPrev i {
+        font-size: 20px;
+    }
+    /* ============== End ourServices =============== */
+    /* ============== Start .gasOffers =============== */
+    .gasOffers {
+        padding-bottom: 30px;
+    }
+
+    .gasOffers .gasOffersImg {
+        display: none;
+    }
+    /* ============== End .gasOffers =============== */
+    /* ============== Start transferOffers =============== */
+    .transferOffers .paginator-center .buttonNextPrev {
+        width: 75%;
+    }
+
+    .transferOffers .paginator-center .buttonNextPrev i {
+        font-size: 20px;
+    }
+    /* ============== End transferOffers =============== */
+    /* ============== Start ourMaps_control =============== */
+    .ourMaps_control .change_sections  {
+        padding: 0;
+        justify-content: center;
+        margin-top: -10px;
+    }   
+    /* ============== End ourMaps_control =============== */
+    /* ============== Start ourMaps =============== */
+    .ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills {
+        margin: 0;
+        justify-content: center;
+    }
+    /* ============== End ourMaps =============== */
+    /* ============== Start latestNews =============== */
+    .latestNews {
+        margin-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .latestNews .latestNewsSlider .latestNewsSection {
+        margin: 0 20px;
+    }
+
+    .latestNews .paginator-center .buttonNextPrev {
+        width: 90%;
+        top: 52%;
+    }
+    /* ============== End latestNews =============== */
+    /* ============== Start ourPartners =============== */
+    .ourPartners {
+        padding: 30px 0;
+    }
+
+    .ourPartners .ourPartnersLinks {
+        flex-wrap: wrap;
+    }
+
+    .ourPartnersLinks a {
+        flex: 30%;
+    }
+
+    .ourPartnersLinks a img {
+        width: 90%;
+        height: 90%;
+    }
+    /* ============== End ourPartners =============== */
+    /* ################### End index Page ################### */
+}
