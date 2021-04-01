@@ -10,20 +10,20 @@ $(document).ready(function(){
   // ############## Start index page Animations ##############
 
   if(bodyDirection == 'rtl'){
-    $('main .mainTools .toolSection').addClass('fadeInLeft');
-    $('.mainBranches .totalMainBranches .branchSection').addClass('fadeInLeft');
+    $('main .mainTools .toolSection').addClass('fadeInUp');
+    $('.mainBranches .totalMainBranches .branchSection').addClass('fadeInUp');
     $('.gasOffers .gasOffersArticle').addClass('fadeInUp');
     $('.gasOffers .totalGasOffers .gasOffersImg').addClass('fadeInDown');
     $('.ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills .nav-link').addClass('fadeInRight');
-    $('.ourPartners .ourPartnersLinks a').addClass('fadeInLeft');
+    $('.ourPartners .ourPartnersLinks a').addClass('fadeInUp');
     
   } else {  
-    $('main .mainTools .toolSection').addClass('fadeInRight');
-    $('.mainBranches .totalMainBranches .branchSection').addClass('fadeInRight');
+    $('main .mainTools .toolSection').addClass('fadeInUp');
+    $('.mainBranches .totalMainBranches .branchSection').addClass('fadeInUp');
     $('.gasOffers .gasOffersArticle').addClass('fadeInDown');
     $('.gasOffers .totalGasOffers .gasOffersImg').addClass('fadeInUp');
     $('.ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills .nav-link').addClass('fadeInLeft');
-    $('.ourPartners .ourPartnersLinks a').addClass('fadeInRight');
+    $('.ourPartners .ourPartnersLinks a').addClass('fadeInUp');
 
   }
   // ############## End index page Animations ##############
