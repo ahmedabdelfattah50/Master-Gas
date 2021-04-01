@@ -1147,7 +1147,7 @@ main .mainTools .toolSection p {
     /* ============== End Navbar =============== */
     /* ============== Start go_up icon =============== */
     .go_up {
-        top: 93%; 
+        top: 90%; 
     }
     /* ============== End go_up icon =============== */ 
     /* ============== Start footer =============== */
@@ -1510,7 +1510,7 @@ main .mainTools .toolSection p {
     }
 
     .sliderAboutCompany .paginator-center .buttonNextPrev i {
-        font-size: 20px;
+        /* font-size: 20px; */
         padding: 8px 20px;
     } 
 
